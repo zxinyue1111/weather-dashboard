@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
+const apiKey = process.env.openweathermap_api_key;
 
 //use port specified by cloud host, default to 3000 locally
 const port = process.env.PORT || 3000;
