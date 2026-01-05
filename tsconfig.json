@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["vite/client"],
+    "strict": true,
+    
+    /* Better Browser Compatibility */
+    "lib": ["ESNext", "DOM", "DOM.Iterable"], 
+    "skipLibCheck": true, // Speeds up compilation by skipping type checks of node_modules
+
+    /* Bundler Rules */
+    "isolatedModules": true, // Required by Vite for fast transpilation
+    "moduleDetection": "force",
+    "noEmit": true, // Vite handles the code conversion, not the TS compiler
+
+    /* Best Practices */
+    "noUnusedLocals": true, // Errors if you declare a variable but don't use it
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
